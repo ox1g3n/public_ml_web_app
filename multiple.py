@@ -30,9 +30,6 @@ heart_model = pickle.load(open(os.path.join(script_dir, 'HeartDisease.sav'), 'rb
 parkinsons_model = pickle.load(open(os.path.join(script_dir, 'ParkinsonsPrediction.sav'), 'rb'))
 parkinsons_scaler = pickle.load(open(os.path.join(script_dir, 'scaler.pkl'), 'rb'))
 
-# Debugging: Print the current working directory to Streamlit
-st.write("Current working directory: ", os.getcwd())
-
 # Helper functions
 def display_selected(text):
     st.markdown(f'<p style="font-size:24px;">{text}</p>', unsafe_allow_html=True)
