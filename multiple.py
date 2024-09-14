@@ -10,6 +10,25 @@ import streamlit as st
 import numpy as np
 import os
 
+
+st.markdown(
+    """
+    <style>
+    /* Adjust padding for the container */
+    @media only screen and (max-width: 600px) {
+    .st-emotion-cache-1eo1tir {
+            padding-left: 0px; /* Adjust padding as needed */
+            padding-right:0px
+        }
+    }
+    
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
+
 # Set page configuration
 st.set_page_config(page_title="Health Assistant",
                    layout="wide",
