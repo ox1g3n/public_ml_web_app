@@ -11,15 +11,6 @@ import numpy as np
 import os
 
 
-# Hides Streamlit footer and hamburger menu
-hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
 # Set page configuration
 st.set_page_config(page_title="Health Assistant",
                    layout="wide",
