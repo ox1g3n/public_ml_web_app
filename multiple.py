@@ -15,6 +15,8 @@ st.set_page_config(page_title="Health Assistant",
                    layout="wide",
                    page_icon="🧑‍⚕️")
 
+
+
 # Get the absolute path of the current directory
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -26,6 +28,8 @@ heart_model = pickle.load(open(os.path.join(script_dir, 'HeartDisease.sav'), 'rb
 
 parkinsons_model = pickle.load(open(os.path.join(script_dir, 'ParkinsonsPrediction.sav'), 'rb'))
 parkinsons_scaler = pickle.load(open(os.path.join(script_dir, 'scaler.pkl'), 'rb'))
+
+
 
 # Helper functions
 def display_selected(text):
