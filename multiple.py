@@ -153,10 +153,12 @@ elif 'Heart' in selected_option:
 
         if heart_prediction[0] == 1:
             heart_diagnosis = 'The person is having heart disease'
+            st.error(heart_diagnosis)
         else:
             heart_diagnosis = 'The person does not have any heart disease'
+            st.success(heart_diagnosis)
 
-    st.success(heart_diagnosis)
+    
 
 elif 'Parkinsons' in selected_option:
     st.title('Parkinsons Disease prediction selected.')
@@ -223,7 +225,9 @@ elif 'Parkinsons' in selected_option:
 
         if parkinsons_prediction[0] == 1:
             parkinsons_diagnosis = 'The person has parkinsons'
+            st.error(parkinsons_diagnosis)
         else:
             parkinsons_diagnosis = 'The person does not have parkinsons'
+            st.success(parkinsons_diagnosis)
 
-    st.success(parkinsons_diagnosis)
+    
