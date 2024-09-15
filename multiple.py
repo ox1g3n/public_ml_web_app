@@ -54,25 +54,27 @@ selected_option = st.sidebar.selectbox(
 # Handling the selected option
 if 'Diabetes' in selected_option:
     st.title('Diabetes prediction selected.')
+    st.write('Please take a standardised blood test before using this app')
+    st.write('This page is for women only')
     col1, col2, col3 = st.columns(3)
 
     with col1:
         Pregnancies = st.text_input('Number of Pregnancies')
 
     with col2:
-        Glucose = st.text_input('Glucose Level')
+        Glucose = st.text_input('Glucose Level(mg/dL)[0-200]')
 
     with col3:
-        BloodPressure = st.text_input('Blood Pressure value')
+        BloodPressure = st.text_input('Systolic Blood Pressure value (mmHg)[80-120]')
 
     with col1:
-        SkinThickness = st.text_input('Skin Thickness value')
+        SkinThickness = st.text_input('Skin Thickness value(mm)[0-60]')
 
     with col2:
-        Insulin = st.text_input('Insulin Level')
+        Insulin = st.text_input('Insulin Level(µIU/mL)[0-1000]')
 
     with col3:
-        BMI = st.text_input('BMI value')
+        BMI = st.text_input('BMI value[15-50]')
 
     with col1:
         DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
@@ -98,43 +100,44 @@ if 'Diabetes' in selected_option:
 
 elif 'Heart' in selected_option:
     st.title('Heart Disease prediction selected.')
+    st.write('Standardised test required')
     col1, col2, col3 = st.columns(3)
 
     with col1:
         age = st.text_input('Age')
 
     with col2:
-        sex = st.text_input('Sex')
+        sex = st.text_input('Sex[0-Male,1-Female]')
 
     with col3:
-        cp = st.text_input('Chest Pain types')
+        cp = st.text_input('Chest Pain types(Under pressure)[0,1,2,3]')
 
     with col1:
-        trestbps = st.text_input('Resting Blood Pressure')
+        trestbps = st.text_input('Resting Blood Pressure Systolic(mmHg)[80-120]')
 
     with col2:
-        chol = st.text_input('Serum Cholestoral in mg/dl')
+        chol = st.text_input('Serum Cholestoral in mg/dl[100-400]')
 
     with col3:
-        fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl')
+        fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl[0-yes,1-no]')
 
     with col1:
-        restecg = st.text_input('Resting Electrocardiographic results')
+        restecg = st.text_input('Resting Electrocardiographic results[0 or 1]')
 
     with col2:
-        thalach = st.text_input('Maximum Heart Rate achieved')
+        thalach = st.text_input('Maximum Heart Rate achieved(bpm)[100-200]')
 
     with col3:
-        exang = st.text_input('Exercise Induced Angina')
+        exang = st.text_input('Exercise Induced Angina[0-no,1-yes]')
 
     with col1:
-        oldpeak = st.text_input('ST depression induced by exercise')
+        oldpeak = st.text_input('ST depression induced by exercise(mm)[0-3]')
 
     with col2:
-        slope = st.text_input('Slope of the peak exercise ST segment')
+        slope = st.text_input('Slope of the peak exercise ST segment[0,1,2]')
 
     with col3:
-        ca = st.text_input('Major vessels colored by flourosopy')
+        ca = st.text_input('Major vessels colored by flourosopy[0,1,2,3]')
 
     with col1:
         thal = st.text_input('thal: 0 = normal; 1 = fixed defect; 2 = reversible defect')
@@ -155,6 +158,7 @@ elif 'Heart' in selected_option:
 
 elif 'Parkinsons' in selected_option:
     st.title('Parkinsons Disease prediction selected.')
+    st.write('Must be used by medical professionals only')
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
