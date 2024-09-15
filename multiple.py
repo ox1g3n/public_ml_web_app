@@ -77,7 +77,7 @@ if 'Diabetes' in selected_option:
         BMI = st.text_input('BMI value[15-50]')
 
     with col1:
-        DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
+        DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value[0-1]')
 
     with col2:
         Age = st.text_input('Age of the Person')
